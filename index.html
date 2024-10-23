@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Eirene Gratuito</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="10" width="800" align="center">
+      <tr>
+        <td rowspan="2" width="150" align="center">
+          <img
+            src="PIC.jpg"
+            alt="Eirene Gratuito's Picture"
+            width="150"
+            height="150"
+          />
+        </td>
+        <td align="center">
+          <h1>EIRENE GRATUITO</h1>
+          <p>+63 9272473570 | eirenegratuito@gmail.com</p>
+        </td>
+      </tr>
+    </table>
+    <table border="1" cellpadding="10" width="800" align="center">
+      <tr>
+        <td colspan="2">
+          <h2>PROFILE</h2>
+          <p>
+            My objective is to apply my skills and educational knowledge in
+            Information Systems to make a substantial contribution to a company.
+            I am determined to enhance my skillset and gain practical experience
+            within a professional business environment.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h2>EDUCATION</h2>
+          <table width="100%" cellpadding="5">
+            <tr>
+              <td>
+                <strong
+                  >TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - MANILA</strong
+                >
+              </td>
+              <td align="right">2022 - Present</td>
+            </tr>
+            <tr>
+              <td>Bachelor of Science in Information System</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>SOUTHERNSIDE MONTESSORI SCHOOL</strong></td>
+              <td align="right">2020 - 2022</td>
+            </tr>
+            <tr>
+              <td>STEM - Senior High School</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>APEC SCHOOLS</strong></td>
+              <td align="right">2016 - 2020</td>
+            </tr>
+            <tr>
+              <td>Junior High School</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h2>PROJECTS</h2>
+          <table width="100%" cellpadding="5">
+            <tr>
+              <td><strong>Space Invaders</strong></td>
+              <td align="right">C Language, Codeblocks</td>
+            </tr>
+            <tr>
+              <td><strong>Minesweeper</strong></td>
+              <td align="right">C Language, Codeblocks</td>
+            </tr>
+            <tr>
+              <td><strong>User Registration Form</strong></td>
+              <td align="right">Java, NetBeans & MySQL</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%" valign="top">
+          <h2>SKILLS</h2>
+          <ul>
+            <li>C and C++</li>
+            <li>Basic HTML/CSS</li>
+            <li>MS Applications</li>
+            <li>Basic Cisco Configuration</li>
+            <li>Basic Web Designing</li>
+            <li>Knowledge in Database Management</li>
+            <li>Fast Learner</li>
+            <li>Adaptability</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+          </ul>
+        </td>
+        <td width="50%" valign="top">
+          <h2>LANGUAGE</h2>
+          <ul>
+            <li>English</li>
+            <li>Filipino</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <table id="CONTACT" width="1000px" align="center" cellpadding="20">
+      <tr>
+        <td align="center">
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1>Contact</h1>
+          <form onsubmit="return validateForm()">
+            <table width="20%" border="2" cellpadding="60">
+              <tr>
+                <td>
+                  <label for="name">Name</label><br />
+                  <input type="text" id="name" /><br /><br />
+
+                  <label for="email">Email</label><br />
+                  <input type="email" id="email" /><br /><br />
+
+                  <label for="message">Message</label><br />
+                  <textarea id="message" rows="5"></textarea><br /><br />
+
+                  <input type="submit" value="Submit" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (name === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+
+        if (email === "" || !email.match(emailPattern)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        if (message === "") {
+          alert("Please enter your message.");
+          return false;
+        }
+
+        alert("Form submitted successfully!");
+        return true;
+      }
+    </script>
+
+    <footer>
+      <table width="100%" align="center" cellpadding="20" border="0">
+        <tr>
+          <td align="center">
+            <br />
+            <br />
+            <br />
+            <p>&copy; 2024 Eirene M. Gratuito. All Rights Reserved.</p>
+            <p>
+              <a href="https://github.com/EireneMG" target="_blank">GitHub</a>
+              |
+              <a
+                href="https://www.linkedin.com/in/eirene-gratuito-22b515317/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              |
+              <a href="https://www.facebook.com/Eirene.Mndz" target="_blank"
+                >Facebook</a
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
